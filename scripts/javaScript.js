@@ -14,7 +14,7 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 
  document.getElementById('snap').addEventListener('click',function(){
-  console.log(context.drawImage(video,0,0,320,240));
+  context.drawImage(video,0,0,320,240);
 });
  
 
