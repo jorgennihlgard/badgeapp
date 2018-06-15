@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+}
+
+.wrap{
+    border: 2px solid black;
+    width: 400px;
+    height: 100px;
+}
+
+#allVisitors{
+    width: 80%;
+    margin : 0 auto;
+}
+
+.rowname {
+    width: 30%;
+    float: left;
+    text-align: right;
+   
+}
+.rowvalue {
+    width: 50%;
+    margin-left: 10px;
+    float:left;
+    margin:5px;
+    
+}
+.wrapper{
+    width: 60%;
+    margin: 0 auto ;
+    display: block;
+}
+
+img{
+    
+    height: 95%;
+    display: inline-block;
+}
+#logo{
+    float: right;
+}
+.clearfix::after{
+
+    content: ""; 
+  
+    display:table; 
+  
+    clear:both; 
+  
+  } 
+
+  .indexBtn{
+      margin: 20px 48%;
+  }
+  .showbadge{
+      margin: 30px 40%;
+  }
