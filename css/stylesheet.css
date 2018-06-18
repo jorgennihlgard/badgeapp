@@ -56,3 +56,19 @@ img{
   .showbadge{
       margin: 30px 40%;
   }
+
+  #my_camera{
+    width: 160px;
+    height: 120px;
+    margin-left: 30%;
+    border: 1px solid black;
+    display: inline-block;
+   }
+
+   #results{
+   margin-right: 30%;
+    float: right;
+}
+   #cameraBtn{
+       display: block;
+   }

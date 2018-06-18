@@ -15,13 +15,22 @@ include('../partials/header.php');
         <p><span class="rowname">Startdatum:</span> <input type="date" class="rowvalue" required name="fromDate" value="<?php $fromDate ?>"></p>
         <p><span class="rowname">Slutdatum:</span> <input type="date" class="rowvalue" required name="endDate" value="<?php $endDate ?>"></p>
 
-        
+       
+ 
        
        
         </div>
         <p class="indexBtn" ><input type="submit" class="btn btn-success btn-lg" name="submit" value="Registrera"></p>
     </form>
-    
+    <div id="my_camera"></div>
+    <div id="results"></div>
+    <div id="cameraBtn" class="text-center">
+ <input type=button value="Starta kamera" onClick="configure()">
+ <input type=button value="Ta foto" onClick="take_snapshot()">
+ <input type=button value="Spara foto" onClick="saveSnap()">
+ </div>
+ 
+ 
    
     <button class="indexBtn btn btn-primary" onclick="window.location.href = 'showall.php';">Visa &nbsp inskrivna</button>    
    
@@ -31,4 +40,7 @@ mysqli_close($db);
 
 include('../partials/footer.php');
 ?>
+
+<script type="text/javascript" src="../scripts/webcam.js"></script>
+<script type="text/javascript" src="../scripts/camera.js"></script>
 

@@ -25,6 +25,7 @@ $logorow = mysqli_fetch_assoc($logoresult);
                   "<tr><th>Ärende: </th><td>" . $row['errand'] . "</td></tr>" .
                  "<tr><th>Startdatum: </th><td>" . $row['fromdate'] . "</td></tr>" .
                  "<tr><th>Slutdatum</th><td>" . $row['enddate'] . "</td><tr>" .
+                 "<img id='logo' src=" . $row['image'] . ">" .
                  "<img id='logo' src=" . $logorow['image'] . ">"
         ?>
     </table>
